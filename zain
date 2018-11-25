@@ -1,0 +1,21 @@
+Module Module1
+
+    Sub Main()
+
+        Dim e As String
+        Dim ne As String = "@mail.com"
+
+L:
+
+        Console.WriteLine("please enter email with out @mail.com")
+        e = Console.ReadLine()
+        Console.WriteLine(e & ne)
+        Console.WriteLine("press any key other than q to restart to")
+        If Console.ReadLine() <> "q" Then
+            GoTo L
+        Else
+        End If
+
+    End Sub
+
+End Module
